@@ -91,7 +91,7 @@ def addData(newData):
     print(data)
 
     with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f)
+        json.dump(data, f, ensure_ascii=False)
 
 
 # 获取当前位置信息
